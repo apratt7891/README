@@ -8,9 +8,27 @@
     <title>Code Quiz!</title>
 </head>
 <body>
-    
+<nav>
+    <div id="navigation">
+        <div class="score">
+            <a onclick="highScore()" href="#"><h3> View high scores</h3></a>
+        </div>
+        <p>Time : <span id="timer"></span></p>
+    </div>
+
+
+
+</nav>
     <div id="questions">
         <h1>Coding Quiz Challenge!</h1>
         <p>Try to answer the following code-related questions within the time limit.<br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
         <button id="button"> Start Quiz!</button>  
     </div>  
+
+
+
+    <script src="assets/js/questions.js"></script>
+
+</body>
+
+</html>

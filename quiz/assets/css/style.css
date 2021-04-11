@@ -1,9 +1,27 @@
 #button {
+    border: none;
     background-color: rgb(35, 87, 69);
     color: blanchedalmond;
-    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 16px 10px 16 px;
+    font-size: 18px;
+    margin: 5px;
 }
 
 #questions {
-    margin: 20px;
+    text-align: center;
+}
+.score {
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+#navigation {
+    display: block;
+    display: inline-block;
+    margin: 10px;
+}
+body {
+    background-color: thistle;
 }
