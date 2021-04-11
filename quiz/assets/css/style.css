@@ -1,4 +1,4 @@
-#button {
+#timer {
     border: none;
     background-color: rgb(35, 87, 69);
     color: blanchedalmond;
@@ -7,21 +7,23 @@
     font-size: 18px;
     margin: 5px;
 }
-
-#questions {
-    text-align: center;
+header {
+    padding: 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.score {
-    float: left;
+#start-page {
+    text-align: center;
 }
 a {
     text-decoration: none;
 }
-#navigation {
-    display: block;
-    display: inline-block;
-    margin: 10px;
-}
+
 body {
     background-color: thistle;
+}
+.hide {
+    display: none;
 }

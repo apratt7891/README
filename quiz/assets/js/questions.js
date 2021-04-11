@@ -1,14 +1,21 @@
+var startButton = document.getElementById("start-btn");
+var startPage = document.getElementById("start-page");
+var quizSection = document.getElementById("quizSection");
+var startQuiz = document.getElementById("startQuiz");
+var activeQuestion = 0;
+var btn1 = document.getElementById("btn-1");
+var btn2 = document.getElementById("btn-2");
+var btn3 = document.getElementById("btn-3");
+var btn4 = document.getElementById("btn-4");
+
+var wrong = 10;
+
 var questions = [
     {
         q: "What is CSS",
-        o: {
-            a: "A rap band",
-            b: "the language we use to style a Web page",
-            c: "A web development site",
-            d: "ice cream flavor",
-        },
-        // b
-        a: "b"
+        o: ["A rap band", "the language we use to style a Web page", "A web development site", "ice cream flavor"],
+        // 1
+        a: 1,
     },
     {
         q: "What does DOM stand for?",
@@ -33,17 +40,20 @@ var questions = [
         a:"c"
     }
 ];
+startButton.onclick = clickStart;
+function clickStart() {
+    startPage.setAttribute ("class", "hide")
+    quizSection.classList.remove("hide")
+    startQuiz();
+    startTimer();
+}
 
-var score = 0;
-var timeLeft = 0;
-var timer;
-
-var timeLeft = document.getElementById("timeLeft");
-var timer = document.getElementById("startTimer");
-
-var wrong = 10;
-
-
-timer.addEventListener("click", function() [
-    if 
-])
+var startQuiz = function() {
+    console.log(activeQuestion)
+    queText.textContent = questions[activeQuestion].q;
+    btn1.textContent = questions[activeQuestion].o[0];
+    btn2.textContent = questions[activeQuestion].o[1];
+    btn3.textContent = questions[activeQuestion].o[2];
+    btn4.textContent = questions[activeQuestion].o[3];
+}
+ 
