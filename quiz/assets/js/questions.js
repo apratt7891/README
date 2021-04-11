@@ -33,3 +33,17 @@ var questions = [
         a:"c"
     }
 ];
+
+var score = 0;
+var timeLeft = 0;
+var timer;
+
+var timeLeft = document.getElementById("timeLeft");
+var timer = document.getElementById("startTimer");
+
+var wrong = 10;
+
+
+timer.addEventListener("click", function() [
+    if 
+])
