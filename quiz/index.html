@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Code Quiz!</title>
@@ -10,9 +9,8 @@
 <body>
 <header>
     
-        <a href="/"><h3> View high scores</h3></a>
-        <div id="timer">
-        </div>
+        <button id="scores" type="button"> View High Scores</button>
+        <span id="timer">Time: 0</span>
         
 </header>
     <div id="start-page">
@@ -21,13 +19,10 @@
         <button id="start-btn"> Start Quiz!</button>  
     </div>
 
-    <div id="quizSection" class="hide">
-       <h3 id="queText">Question</h3>
-       <button class=“click” id="btn-1">Answer 1</button>
-        <button class=“click” id="btn-2">Answer 2</button>
-        <button class=“click” id="btn-3">Answer 3</button>
-        <button class=“click” id="btn-4">Answer 4</button>
-    </div>
+    <div id="questions"></div>
+    <div id="answers"></div>
+    <div id="results"></div>
+    <div id="scores"></div>
 
 
     <script src="assets/js/questions.js"></script>

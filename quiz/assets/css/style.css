@@ -6,6 +6,7 @@
     padding: 10px 16px 10px 16 px;
     font-size: 18px;
     margin: 5px;
+    float: right;
 }
 nav {
     padding: 0px 150px;
@@ -16,6 +17,11 @@ nav {
 }
 #start-page {
     text-align: center;
+}
+#start-btn {
+    color: blueviolet;
+    border-radius: 5px;
+    border: none;
 }
 a {
     text-decoration: none;
