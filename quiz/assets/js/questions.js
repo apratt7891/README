@@ -56,4 +56,26 @@ var startQuiz = function() {
     btn3.textContent = questions[activeQuestion].o[2];
     btn4.textContent = questions[activeQuestion].o[3];
 }
- 
+
+var timerId;
+function startTimer () {
+    timerId = setInterval(timer, 1000)
+    timeSet.textContent = “Time Left: ” + time
+}
+
+
+
+
+
+7:17
+function timer () {
+    time--;
+    timeSet.textContent = “Time Left: ” + time
+    if ( time <= 0) {
+        //call end quiz function
+        endQuiz();
+    }
+}
+function endQuiz() {
+    clearInterval(timerId);
+}
