@@ -1,21 +1,19 @@
-
-var timeLeft = 30;
-var scores = document.getElementById("scores");
-var startButton = document.getElementById("start-btn");
-var startPage = document.getElementById("start-page");
-var questions = document.getElementById("questions");
-var answers = document.getElementById("answers");
-var results = document.getElementById("results");
-
-
-
-
-
-document.getElementById(start-btn).onclick = function() {myFunction()};
-
-function myFunction() {
-    document.getElementById(start-btn).innerHTML = "Let's go!";
+var startBtn = document.getElementById('start-btn');
+startBtn.addEventListener('click', function() {
+    startTimer();
+})
+var timeLeft = 60;
+var questionCount = 0;
+var timer = document.getElementById("timer");
+function startTimer() {
+    var timerInterval = setInterval(function() {
+        timeLeft--;
+        timer.textContent = "";
+        timer.textContent = "Time:" + timeLeft;
+        if (timeLeft <= 0 || questionCount === questions.length) {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
 }
-
 
 
