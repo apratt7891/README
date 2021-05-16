@@ -1,8 +1,9 @@
+const fs = require("fs");
+const util = require('util');
 const inquirer = require('inquirer');
-const generatePage = require('./src/page-template');
 const generateSite = require('./utils/generate-site');
-const { writeFile } = require('./utils/generate-site');
 
+const writeFile  = util.promisify(fs.writeFile);
 
 
 
@@ -86,21 +87,7 @@ const promptUser = () => {
         }
       }
     },
-  ]);
-};
-
-const promptProject = portfolioData => {
-  console.log(`
-=================
-Add a New Project
-=================
-`);
-  if (!portfolioData.projects) {
-    portfolioData.projects = [];
-  }
-  return inquirer
-    .prompt([
-      {
+    {  
         type: 'checkbox',
         name: 'license',
         message: 'What license did you use for this project? (Check all that apply)',
@@ -132,31 +119,20 @@ Add a New Project
           }
         }
       },
-      {
-        type: 'confirm',
-        name: 'confirmAddProject',
-        message: 'Would you like to enter more information?',
-        default: false
-      }
-    ])
-    .then(projectData => {
-      portfolioData.projects.push(projectData);
-      if (projectData.confirmAddProject) {
-        return promptProject(portfolioData);
-      } else {
-        return portfolioData;
-      }
-    });
-};
+    ])}
+   
+async function displayReadMe() {
+  try {
+    const pageData = await promptUser();
+    const displayContent = generateSite(pageData);
 
-promptUser()
-  .then(promptProject)
-  .then(portfolioData => {
-    return generatePage(portfolioData);
-  })
-  .then(pageHTML => {
-    return generateSite(pageHTML);
-  })
-  .catch(err => {
+    await writeFile('./dist/README.md', displayContent);
+    console.log('File created!');
+  } catch(err) {
     console.log(err);
-  });
+  }
+  }
+
+    
+displayReadMe();
+    
