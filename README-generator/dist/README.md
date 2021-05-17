@@ -13,15 +13,16 @@
 - [Tests](#test)
 - [Questions](#questions)
 ## Installation
- none
+ inquirer and npm install
 ## Usage
-💻  https://www.youtube.com/watch?v=ja8Et2Ol3Kc
+💻 <a href="https://www.youtube.com/watch?v=ja8Et2Ol3Kc" alt="youtube video"></a>
+https://www.youtube.com/watch?v=ja8Et2Ol3Kc
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 <br />
 This application is covered by the MIT license. 
 ## Contributing
-👩‍💻  none
+👩‍💻  none 
 ## Tests
 none
 ## Questions
