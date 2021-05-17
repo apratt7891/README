@@ -16,7 +16,7 @@ function generateSite(answers) {
 ## Installation
  ${answers.install}
 ## Usage
-💻 <a href="https://youtu.be/ja8Et2Ol3Kc" alt="youtube video"></a>
+💻 <a href="https://www.youtube.com/watch?v=ja8Et2Ol3Kc" alt="youtube video"></a>
 ${answers.usage}
 ## License
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
