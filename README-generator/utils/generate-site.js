@@ -16,7 +16,8 @@ function generateSite(answers) {
 ## Installation
  ${answers.install}
 ## Usage
-💻 ${answers.usage}
+💻 https://youtu.be/ja8Et2Ol3Kc
+${answers.usage}
 ## License
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 <br />
@@ -31,7 +32,7 @@ ${answers.test}
 :octocat: Find me on GitHub: [${answers.github}](https://github.com/${answers.github})<br />
 <br />
 ✉️ Email me with any questions: ${answers.email}<br /><br />
-_This README was generated with ❤️ by [README-generator](https://apratt7891.github.io/README/) 🔥🔥🔥_
+_This README was generated with ❤️ by [README-generator](https://apratt7891.github.io/README/) 👩‍💻
     `;
   }
   
