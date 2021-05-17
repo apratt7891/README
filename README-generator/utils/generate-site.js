@@ -1,6 +1,6 @@
 function generateSite(answers) {
     return `
-<h1 align="center">${answers.title} 👋</h1>
+<h1 align="center">${answers.title} 📕</h1>
   
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 ## Description
@@ -14,7 +14,7 @@ function generateSite(answers) {
 - [Tests](#test)
 - [Questions](#questions)
 ## Installation
-💾 ${answers.install}
+ ${answers.install}
 ## Usage
 💻 ${answers.usage}
 ## License
@@ -22,11 +22,11 @@ function generateSite(answers) {
 <br />
 This application is covered by the ${answers.license} license. 
 ## Contributing
-👪 ${answers.contribution}
+👩‍💻  ${answers.contribution}
 ## Tests
-✏️ ${answers.test}
+${answers.test}
 ## Questions
-✋ ${answers.questions}<br />
+❓ ${answers.questions}<br />
 <br />
 :octocat: Find me on GitHub: [${answers.github}](https://github.com/${answers.github})<br />
 <br />

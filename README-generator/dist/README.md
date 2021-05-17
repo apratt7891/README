@@ -1,9 +1,9 @@
 
-<h1 align="center">README Generator 👋</h1>
+## README Generator 
   
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
+
 ## Description
-🔍 Use this README generator to create a sleek and simple README.md for your GitHub repositories!
+Use this README generator to create a sleek and simple README.md for your GitHub repositories!
 ## Table of Contents
 - [Description](#description)
 - [Installation](#install)
@@ -13,19 +13,19 @@
 - [Tests](#test)
 - [Questions](#questions)
 ## Installation
-💾 none
+Clone this repository to your machine, run npm install and allow all required packages to install
 ## Usage
-💻 none
+💻 Run node index, answer each question by hitting enter. To answer the License question, use the arrow keys to navigate and hit enter to make a selection
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 <br />
 This application is covered by the MIT license. 
 ## Contributing
-👪 none
+👩‍💻 none
 ## Tests
 ✏️ none
 ## Questions
-✋ undefined<br />
+❓ undefined<br />
 <br />
 :octocat: Find me on GitHub: [apratt7891](https://github.com/apratt7891)<br />
 <br />
